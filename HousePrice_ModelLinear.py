@@ -2,12 +2,12 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-st.image("http://www.ehtp.ac.ma/images/lo.png")
+# st.image("http://www.ehtp.ac.ma/images/lo.png")
 st.write("""
 # MSDE4 : ML Project
 ## Price house Prediction App
 
-This app predicts the **Price house** 
+#This app predicts the **Price house** 
 """)
 
 ######st.sidebar.image("/Users/mehdi/Documents/téléchargement.jpeg",width=300)
