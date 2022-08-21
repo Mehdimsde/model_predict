@@ -10,7 +10,7 @@ st.write("""
 #This app predicts the **Price house** 
 """)
 
-######st.sidebar.image("/Users/mehdi/Documents/téléchargement.jpeg",width=300)
+st.sidebar.image("/Users/mehdi/Documents/téléchargement.jpeg",width=300)
 
 st.sidebar.header('User Input Parameters')
 
@@ -47,7 +47,7 @@ def user_input_features():
 def show_results():
     st.subheader(" Input parameters")
     st.write(cred)
-    model_cred = pickle.load(open("model_Lnear_Price.pkl", "rb"))
+    model_cred = pickle.load(open("model_KNN_Price.pkl", "rb"))
     prediction = model_cred.predict(cred)
     st.subheader("Prediction")
     st.write(prediction)
@@ -67,7 +67,7 @@ if option=='House Prediction Model':
         df = pd.read_csv(uploaded_file)
         st.write(df)
 
-        model_loan=pickle.load(open("model_Lnear_Price.pkl", "rb"))
+        model_loan=pickle.load(open("model_KNN_Price.pkl", "rb"))
 
         if st.button('Predict'):
             prediction = model_loan.predict(df)
