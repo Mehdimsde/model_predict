@@ -10,7 +10,7 @@ st.write("""
 #This app predicts the **Price house** 
 """)
 
-st.sidebar.image("/Users/mehdi/Documents/téléchargement.jpeg",width=300)
+st.sidebar.image("image2.jpeg",width=300)
 
 st.sidebar.header('User Input Parameters')
 
